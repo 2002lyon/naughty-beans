@@ -81,7 +81,7 @@ top:0;
 width: 100%;
 padding-top: 50px;
 min-height: 700px;
-background: url("/img/background.jpg");
+background: url("../img/background.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -141,7 +141,7 @@ font-family: 'Montez', cursive;
 
 #story{
     display: flex;
-    background: url(/img/coffee.jpg);
+    background: url(../img/coffee.jpg);
     min-height:700px ;
     background-position: center;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@ font-family: 'Montez', cursive;
     content: "";
     width: 100%;
     position: absolute;
-    background: url("/img/donuts.jpg");
+    background: url("../img/donuts.jpg");
     height: 550px;
     background-position: center;
     background-repeat: no-repeat;
