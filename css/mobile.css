@@ -188,11 +188,19 @@ header{
 /* ---------------------navbar--------------------------------- */
 
 /* ------------------------home---------------------------------------- */
+#home{
+    justify-content: center;
+    align-items: center;
+}
+
 .intro p{
     color: #ffd485;
     font-size: 4rem;
     font-family: 'Montez', cursive;
-    margin-top: -230px;
+   
+}
+.intro .dis{
+    margin-top: -265px;
 }
 
 /* ------------------------home---------------------------------------- */
