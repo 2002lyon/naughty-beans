@@ -464,7 +464,7 @@ align-items: center;
     content: "";
     width: 100%;
     position: absolute;
-    background: url("/img/special_coffee.jpg");
+    background: url("../img/special_coffee.jpg");
     height: 550px;
     background-position: center;
     background-repeat: no-repeat;
