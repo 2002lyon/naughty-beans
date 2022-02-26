@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =========================================logo============================================= */
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+#logo a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+#logo a h1{
+    font-family: 'Montez', cursive;
+    color: white;
+    font-size: 2rem;
+    padding: 12px 0px;
+    padding-right: 100px;
+}
+
+
+/* ------------------------------------------navbar--------------------------------------------------- */
+#navbar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    /* height: 10vh; */
+    
+    
+}
+
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    margin: 0px 40px;
+
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar ul li:hover{
+    list-style: disc;
+    color: #fcda9a;
+    
+}
+#navbar ul li a:hover{
+color: #fcda9a;
+text-decoration: none;
+
+}
+/* ------------------------------------home---------------------------------------------------------- */
+#home{
+display: flex;
+
+/* position: relative; */
+align-items:center;
+justify-content: center;
+text-align: center;
+max-height: 655px;
+padding-top: 300px;
+}
+
+
+#home::before{
+content: "";
+position: absolute;
+top:0;
+width: 100%;
+padding-top: 50px;
+min-height: 700px;
+background: url("/img/background.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+opacity: 0.95;
+z-index: -1;
+
+}
+
+#home .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 110px 0px;
+}
+.intro p{
+color: #ffd485;
+font-size: 4.7rem;
+font-family: 'Montez', cursive;
+
+}
+/* -----------------------------------open------------------------------------------------------------ */
+.design{
+    padding: 120px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+   
+}
+.para{
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 1rem;
+}
+
+.para .strong{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 3px;
+}
+.time .para .weak{
+    color: #acb8c4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+/* -----------------------------------------story-------------------------------------------------- */
+
+#story{
+    display: flex;
+    background: url(/img/coffee.jpg);
+    min-height:700px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    width: 100%;
+}
+/* #story::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: url("/img/bread-form.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 10px 0;
+    z-index: -1;
+} */
+
+.box{
+        /* padding: 100px 40px; */
+        border: 20px solid #131822;
+        display: flex;
+        margin-left: 820px;
+        /* align-items: center; */
+        /* justify-content: center; */
+        max-width: 1000px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        margin-right: 130px;
+        box-shadow: 6px 6px  20px #0b0e13;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 600px;
+    
+}
+
+#story .box h2{
+    color:#b48c80;
+    margin-top: 30px;
+    font-family: 'Montez', cursive;
+    font-size: 2.6rem;
+}
+
+#story .box> p{
+    color: black;
+    font-family: 'Suranna', serif;
+    text-transform: uppercase;
+    margin-top: -8px;
+    font-size: 1.8rem;
+
+}
+.story{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 108px;
+}
+.gap{
+    border-bottom: 1px solid #b48c80;
+    width: 25%;
+    padding: 3px 0px;
+}
+.story>p{
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem
+}
+
+
+/* ---------------------------donut------------------------------------------------------------------ */
+
+#donut{
+    
+        display: flex;
+        /* background: url(/img/donuts.jpg); */
+        min-height:700px ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* position: absolute; */
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+}
+
+#donut>h1{
+    font-family: 'Montez', cursive;
+    color: #e2d4bb;
+    text-shadow: 9px 9px 10px #b48c80;
+}
+#donut >p{
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Suranna', serif;
+    text-shadow: 20px 20px 10px #b48c80;
+}
+
+#donut::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: url("/img/donuts.jpg");
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 75px 0px;
+    margin: 10px 0;
+    z-index: -1;
+}
+
+/* --------------------------------------menu----------------------------------------------------------- */
+#menu{
+    background-color: rgb(238, 232, 232);
+    margin: 70px 150px;
+    width: 80%;
+    min-height: 680px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -20px;
+    overflow: hidden;
+    margin-top: 90px;
+}
+#menu .images{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    flex-direction: row;
+    width: 48%;
+}
+
+
+
+
+
+
+#menu .images .box1 img{
+    width: 49%;
+    height: auto;
+   
+    display: inline-block;
+}
+#menu .images .box2 img{
+    width: 49%;
+    height: auto;
+    display: inline-block;
+}
+
+
+/* ------------------------button--------------------------------------------- */
+
+#button{
+   
+   display: flex;
+   justify-content: center;
+    align-items: top;
+    margin-top: 25px;
+}
+.btn{
+    width: 200px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0b0e13;
+    color: white;
+    font-family: 'Suranna', serif;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 8px rgb(32, 32, 32);
+    cursor: pointer;
+    z-index: 20;
+    
+}
+.btn:hover{
+    background-color: #b48c80;
+    transition: 0.2s;
+    color: white;
+    box-shadow: 3px 3px 8px #ffd485;
+    
+}
+
+
+
+
+/* ----------------------------menu-items----------------------------------------------------- */
+.items{
+    margin-left:30px;
+    width: 52%;
+    /* border: 2px solid green; */
+    overflow: hidden;
+    
+}
+
+.items >h1{
+    font-family: 'Montez', cursive;
+    color: #b48c80;
+    font-size: 2.2rem;
+    
+}
+.items >p{
+    font-family: 'Suranna', serif;
+    font-size: 2.3rem;
+   
+    margin-top: -23px; 
+    margin-bottom: -23px;   
+}
+
+.items >.gap{
+    width: 15%;
+    margin-bottom: 40px;
+}
+
+.foods{
+    display: flex;
+    flex-direction: column;
+}
+.food1{
+display: flex;
+align-items: center;
+
+}
+
+.food2{
+display: flex;
+align-items: center;
+
+}
+
+.food3{
+display: flex;
+align-items: center;
+
+}
+ .head{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+.tail{
+    margin-left: 20px;
+    margin-right: 30px;
+    color: #777777;
+
+}
+.price>h1{
+    font-family: 'Montez', cursive;
+    color: #b48c80;
+    font-size: 2.2rem;
+    /* border-bottom: 1px thin #969595; */
+    border-top: 1px thin #777777;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    margin: 0px 25px;
+}
+
+.break{
+    display: flex;
+    flex-direction: column;
+}
+
+.food2{
+    display: flex;
+    align-items: center;
+    
+}
+.food3{
+    display: flex;
+    align-items: center;
+
+}
+.foods .food1>img{
+    width: 20%;
+    height: 100%;
+    height: 100%;
+    padding-bottom: 10px ;
+    border-radius: 100%;
+    /* padding-right: 30px; */
+}
+.foods .food2>img{
+    width: 20%;
+    height: 100%;
+    padding: 10px 0px;
+    border-radius: 100%;
+}
+.foods .food3>img{
+    width: 20%;
+    height: 100%;
+    padding-top: 10px ;
+    border-radius: 100%;
+}
+/* --------------------------------day--------------------------------------------------------------- */
+
+#day{
+    display: flex;
+    flex-direction: column;
+    /* background: url("/img/special_coffee.jpg"); */
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    margin-top: 20px;
+}
+
+#day::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: url("/img/special_coffee.jpg");
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    padding: 75px 0px;
+    margin: 10px 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+#day>h1{
+    color: #0b0e13;
+    
+    font-family: 'Montez', cursive;
+    text-shadow: 20px 20px 6px #b48c80;
+}
+#day >p{
+    color: #131822;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    font-size: 2.9rem;
+    font-family: 'Suranna', serif;
+    text-shadow: 20px 20px 8px #0b0e13;
+}
+
+/* ---------------------------------------reservation--------------------------------------- */
+#reservation{
+    display: flex;
+    margin: 80px auto;
+    width: 80%;
+    background-color: rgb(240, 234, 234);
+}
+.res1{
+    width:33.33% ;
+    overflow: hidden;
+}
+.res1>img{
+    width: 100%;
+    height: auto;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid rebeccapurple; */
+    width:33.33% ;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 0px;
+    
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.res2{
+    width:26.67% ;
+    overflow: hidden;
+    width:33.33% ;
+    overflow: hidden;
+}
+.res2>img{
+    width: 100%;
+    height: auto;
+}
+
+.login>h1{
+    color: #b48c80;
+    font-size: 2.4rem;
+    font-family: 'Montez', cursive;
+    font-weight: 300;
+    padding-top: 50px;
+}
+
+.login>p{
+    font-family: 'Suranna', serif;
+    font-size: 2.5rem;
+    margin-top: -25px; 
+}
+.reserved{
+    margin: 30px 0px;
+}
+.reserved input{
+    border: 1px solid #CCC;
+    margin: 5px 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+.reserved ::placeholder{
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+}
+.reserved select{
+    border: 1px solid #CCC;
+    margin: 5px 20px;
+    padding: 15px 0px;
+    text-align: center;
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+.reserved select>option{
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.reserved .submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.reserved .submit>button{
+    width: 100%;
+    padding: 13px 20px;
+    margin: 7px 20px;
+    color: white;
+    background-color: #0b0e13;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.reserved .submit>button:hover{
+    background-color: #b48c80;
+    transition: 0.2s;
+}
+/* ----------------------------------------links------------------------------------------ */
+
+.links{
+    display: flex;
+    flex-wrap: flex-start;
+    margin-top: 30px;
+}
+
+.icons{
+    
+   
+    height: auto;
+    /* background-color: #131822; */
+    /* border-radius: 100%; */
+    font-size: 1.1rem;
+    color: white;
+}
+
+.links ul {
+    display: flex;
+    
+}
+.links ul li{
+    list-style: none;
+    padding: 10px 20px;
+    
+    
+}
+.links ul li a{
+    color: white;
+    border-radius: 100%;
+    text-decoration: none;
+
+}
+
+.links .icons:hover{
+    color: #ffd485;
+}
+
+/* -----------------------footer-------------------------------------------------------------- */
+.visit-info{
+    background-color: #131822;
+    color: white;
+    padding-left: 30px;
+    min-height: 80px;
+}
+.visit-info >p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.visit-info>h4{
+    font-family: 'Suranna', serif;
+    font-size: 2.3rem;
+    margin-top: -5px;
+    font-weight: 400;
+    
+}
+.img-foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0e13;
+    
+    flex-direction: column;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+}
+
+.img-foot>p{
+    color: #929191;
+}
+
+.img-foot>h1{
+    font-family: 'Montez', cursive;
+    padding: 70px 0px;
+}
+
+.img-foot .reserve>h6{
+    font-size: 0.9rem;
+}
+.img-foot .reserve{
+    display: flex;
+}
+.img-foot .reserve>h6{
+    color: #fcda9a;
+}
+
+
+.img-foot .reserve>p{
+    color: #929191;
+}
+
+.img-foot >h6{
+    color: #fcda9a;
+    font-size: 0.9rem;
+}
+.copy{
+    display: flex;
+    background-color: #0b0e13;
+    border-top:0.01px solid #131822 ;
+    color: #777777;
+    padding: 10px 100px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------utility classes-------------------------------------------------------- */
+
+.h-primary{
+    color: white;
+    font-size: 3.9rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.h3-primary{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 12px 0px;
+
+}

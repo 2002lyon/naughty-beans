@@ -1,0 +1,13 @@
+colors
+
+* #fcda9a
+* #0b0e13
+* #acb8c4
+
+fonts
+
+Montserrat
+Montez
+Suranna
+font-family: "Playfair Display",Georgia,serif;
+Fira Sans
