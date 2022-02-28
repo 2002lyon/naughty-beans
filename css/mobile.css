@@ -66,95 +66,728 @@
 
 @media (min-width:900px) and (max-width: 1080px){
 
-    #logo a h1{
-        font-size: 1.5rem;
-    }
+    /* ----------------------header----------------------------- */
+
+header{
+    position: static;
+    /* top: 0px; */
+    z-index: 100;
+}
+/* ----------------------header----------------------------- */
+
+
+/* ---------------------navbar--------------------------------- */
+#navbar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo a h1{
+    padding-left: 100px;
+}
+#navbar ul li{
+    display: none;
     
-    #navbar ul li{
-        margin: 0px 20px;
-        font-size: 0.8rem;
+}
+
+/* ---------------------navbar--------------------------------- */
+
+/* ------------------------home---------------------------------------- */
+#home{
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.intro p{
+    color: #ffd485;
+    font-size: 4rem;
+    font-family: 'Montez', cursive;
+   
+}
+.intro .dis{
+    margin-top: -265px;
+}
+
+/* ------------------------home---------------------------------------- */
+
+/* -------------------------open--------------------------------------- */
+
+.design{
+    padding: 20px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+   
+}
+.para{
+    display: flex;
+    flex-direction: column;
     
-    }
+}
+
+.para p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 3px;
+}
+.time .para .weak{
+    color: #acb8c4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+/* -------------------------open--------------------------------------- */
 
 
-    #story{
-        min-height: 550px;
-    }
+/* -------------------------story--------------------------------------- */
+   
 
-    #story .box{
-        padding: 10px 0px;
-        margin-left: 500px;
-        width: 500px;
-        margin-right: 150px;
-    }
-    .story >p{
-        font-size: 1rem;
-        line-height: 1.3rem;
+#story .box{
+        margin: 120px auto;
+        width: 300px;
+        max-height: 450px;
     }
 
     .story{
-        padding: 10px 55px;
-    }
-
-
-    #menu{
-        margin: auto 150px;
-        max-height: 500px;
-        margin-top: 100px;
-        margin-bottom: -20px;
-        /* overflow: hidden; */
-    }
-
-    .items>h1{
-        font-size: 1.8rem;
-        padding-bottom: 4px;
-    }
-    
-    .gap{
-        display: none;
-    }
-
-    .items>p{
-        font-size: 1.5rem;
-        margin-bottom: 3px;
-    }
-    .btn{
-        width: 150px;
-        padding: 5px 8px;
-        font-family: 'Suranna', serif;
-        font-size: 1rem;
-    }
-
-
-    .login{
-        padding: 18px 0px;
-    }
-    .login>h1{
-        padding: 0px 25px;
-        padding-top: 10px;
-        font-size: 2rem;
-
-    }
-
-    .login>p{
-        font-size: 1.6rem;
-        padding: 0px 15px;
-        padding-top: 10px;
-    }
-    #reservation{
-        margin-bottom: 65px;
-    }
-
-    .reserved input{
-        
-        margin: 3px 20px;
         padding: 10px 0px;
-        text-align: center;
+    }
+    .story>p{
+        font-size: 0.8rem;
     }
 
+/* --------------------------------story-------------------------------- */
+
+
+
+/* ----------------------menu-------------------------------- */
+#menu{
+    flex-direction: column;
+    margin: 70px auto;
+    
+}
+
+#menu .images{
+    
+    width: 100%;
+}
+
+/* ----------------------menu-------------------------------- */
+
+/* --------------------------------- items------------------- */
+
+
+.items{
+    margin: 10px auto;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.items>.gap{
+    display: none;
+}
+
+
+.items >h1{
+    
+    font-size: 1.5rem;
+    
+}
+
+.items >p{
+    
+    font-size: 1.2rem;
+   
+    margin-top: -10px; 
+    margin-bottom: -23px;   
+}
+
+
+.foods{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.food1{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.food2{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.food3{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.foods .food1>img{
+    width: 50%;
+    height: 100%;
+    height: 100%;
+    padding-bottom: 10px ;
+    border-radius: 100%;
+    /* padding-right: 30px; */
+}
+.foods .food2>img{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0px;
+    border-radius: 100%;
+}
+.foods .food3>img{
+    width: 50%;
+    height: 100%;
+    padding-top: 10px ;
+    border-radius: 100%;
+}
+
+.head{
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+.tail{
+    margin: auto;
+    text-align: justify;
+
+}
+.price>h1{
+    font-family: 'Montez', cursive;
+    color: #b48c80;
+    font-size: 2.2rem;
+    /* border-bottom: 1px thin #969595; */
+    border-top: 1px thin #777777;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    margin: 0px 25px;
+    border-bottom: 1px solid #b48c80;
+}
+/* --------------------------------- items------------------- */
+
+/* ------------------------button---------------------------- */
+
+.btn{
+    width: 130px;
+    font-size: 0.8rem;
+}
+
+.btn:hover{
+    background-color: #0b0e13;
+    transition: 0.2s;
+    color: white;
+    box-shadow: 3px 3px 8px rgb(32, 32, 32);
+}
+
+
+/* ------------------------button---------------------------- */
+
+
+/* --------------------------------day---------------------------------- */
+
+#day>h1{
+    font-size: 2.5rem;
+    border-bottom: 2px solid #0b0e13;
+}
+#day>p{
+   text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+    font-family: 'Suranna', serif;
+    text-shadow: 10px 10px 8px #0b0e13;
+}
+
+/* --------------------------------day---------------------------------- */
+
+
+#reservation{
+margin: 10px auto;
+}
+
+#reservation .res1{
+    display: none;
+    
+}
+#reservation .res2{
+    display: none;
+}
+
+.login{
+    background-color: rgb(238, 232, 232);
+    width: 95%;
+}
+
+.login>p{
+    font-size: 1.8rem;
+    margin-top: -20px; 
+}
+
+
+.reserved{
+    margin: 10px 0px;
+}
+.reserved input{
+    border: 1px solid #CCC;
+    margin: 3px 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.reserved select{
+   
+    margin: 3px 20px;
+    padding: 15px 0px;
+    
+    font-size: 1rem;
+}
+.reserved .submit>button:hover{
+    background-color: #0b0e13;
+    transition: 0.2s;
+}
+
+/* ------------------------donut---------------------------------- */
+#donut >p{
+    color: white;
+    font-size: 1.5rem;
+    
+    text-shadow: 10px 10px 5px #b48c80;
+}
+
+
+/* ------------------------donut---------------------------------- */
+
+/* ------------------------visit-info------------------- */
+.visit-info{
+    background-color: #131822;
+    color: white;
+    padding: 30px;
+    min-height: 50px;
+}
+
+.visit-info>p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.visit-info>h4{
+    
+    font-size: 1.7rem;
+    margin-top: 3px;
+    font-weight: 400;
+    
+}
+
+
+
+/* ------------------------visit-info------------------- */
+
+/* ----------------------------copy-------------------------------------- */
+
+.copy{
+    font-size: 0.5rem;
+}
+
+
+/* ----------------------------copy-------------------------------------- */
+
+/* ---------------------utility-classes-------------------------- */
+.h-primary{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.h3-primary{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 12px 0px;
+    
+}
+/* ---------------------utility-classes-------------------------- */
 
 
 }
+
+
+
+
+@media (min-width:670px) and (max-width: 900px){
+    
+/* ----------------------header----------------------------- */
+
+header{
+    position: static;
+    /* top: 0px; */
+    z-index: 100;
+}
+/* ----------------------header----------------------------- */
+
+
+/* ---------------------navbar--------------------------------- */
+#navbar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo a h1{
+    padding-left: 100px;
+}
+#navbar ul li{
+    display: none;
+    
+}
+
+/* ---------------------navbar--------------------------------- */
+
+/* ------------------------home---------------------------------------- */
+#home{
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.intro p{
+    color: #ffd485;
+    font-size: 4rem;
+    font-family: 'Montez', cursive;
+   
+}
+.intro .dis{
+    margin-top: -265px;
+}
+
+/* ------------------------home---------------------------------------- */
+
+/* -------------------------open--------------------------------------- */
+
+.design{
+    padding: 20px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+   
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.para p{
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 3px;
+}
+.time .para .weak{
+    color: #acb8c4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+/* -------------------------open--------------------------------------- */
+
+
+/* -------------------------story--------------------------------------- */
+   
+
+#story .box{
+        margin: 120px auto;
+        width: 300px;
+        max-height: 450px;
+    }
+
+    .story{
+        padding: 10px 0px;
+    }
+    .story>p{
+        font-size: 0.8rem;
+    }
+
+/* --------------------------------story-------------------------------- */
+
+
+
+/* ----------------------menu-------------------------------- */
+#menu{
+    flex-direction: column;
+    margin: 70px auto;
+    
+}
+
+#menu .images{
+    
+    width: 100%;
+}
+
+/* ----------------------menu-------------------------------- */
+
+/* --------------------------------- items------------------- */
+
+
+.items{
+    margin: 10px auto;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+.items>.gap{
+    display: none;
+}
+
+
+.items >h1{
+    
+    font-size: 1.5rem;
+    
+}
+
+.items >p{
+    
+    font-size: 1.2rem;
+   
+    margin-top: -10px; 
+    margin-bottom: -23px;   
+}
+
+
+.foods{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.food1{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.food2{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.food3{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.foods .food1>img{
+    width: 50%;
+    height: 100%;
+    height: 100%;
+    padding-bottom: 10px ;
+    border-radius: 100%;
+    /* padding-right: 30px; */
+}
+.foods .food2>img{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0px;
+    border-radius: 100%;
+}
+.foods .food3>img{
+    width: 50%;
+    height: 100%;
+    padding-top: 10px ;
+    border-radius: 100%;
+}
+
+.head{
+    margin: auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+.tail{
+    margin: auto;
+    text-align: justify;
+
+}
+.price>h1{
+    font-family: 'Montez', cursive;
+    color: #b48c80;
+    font-size: 2.2rem;
+    /* border-bottom: 1px thin #969595; */
+    border-top: 1px thin #777777;
+    padding: 5px 0px;
+    font-size: 1.5rem;
+    margin: 0px 25px;
+    border-bottom: 1px solid #b48c80;
+}
+/* --------------------------------- items------------------- */
+
+/* ------------------------button---------------------------- */
+
+.btn{
+    width: 130px;
+    font-size: 0.8rem;
+}
+
+.btn:hover{
+    background-color: #0b0e13;
+    transition: 0.2s;
+    color: white;
+    box-shadow: 3px 3px 8px rgb(32, 32, 32);
+}
+
+
+/* ------------------------button---------------------------- */
+
+
+/* --------------------------------day---------------------------------- */
+
+#day>h1{
+    font-size: 2.5rem;
+    border-bottom: 2px solid #0b0e13;
+}
+#day>p{
+   text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+    font-family: 'Suranna', serif;
+    text-shadow: 10px 10px 8px #0b0e13;
+}
+
+/* --------------------------------day---------------------------------- */
+
+
+#reservation{
+margin: 10px auto;
+}
+
+#reservation .res1{
+    display: none;
+    
+}
+#reservation .res2{
+    display: none;
+}
+
+.login{
+    background-color: rgb(238, 232, 232);
+    width: 95%;
+}
+
+.login>p{
+    font-size: 1.8rem;
+    margin-top: -20px; 
+}
+
+
+.reserved{
+    margin: 10px 0px;
+}
+.reserved input{
+    border: 1px solid #CCC;
+    margin: 3px 20px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.reserved select{
+   
+    margin: 3px 20px;
+    padding: 15px 0px;
+    
+    font-size: 1rem;
+}
+.reserved .submit>button:hover{
+    background-color: #0b0e13;
+    transition: 0.2s;
+}
+
+/* ------------------------donut---------------------------------- */
+#donut >p{
+    color: white;
+    font-size: 1.5rem;
+    
+    text-shadow: 10px 10px 5px #b48c80;
+}
+
+
+/* ------------------------donut---------------------------------- */
+
+/* ------------------------visit-info------------------- */
+.visit-info{
+    background-color: #131822;
+    color: white;
+    padding: 30px;
+    min-height: 50px;
+}
+
+.visit-info>p{
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.visit-info>h4{
+    
+    font-size: 1.7rem;
+    margin-top: 3px;
+    font-weight: 400;
+    
+}
+
+
+
+/* ------------------------visit-info------------------- */
+
+/* ----------------------------copy-------------------------------------- */
+
+.copy{
+    font-size: 0.5rem;
+}
+
+
+/* ----------------------------copy-------------------------------------- */
+
+/* ---------------------utility-classes-------------------------- */
+.h-primary{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.h3-primary{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 12px 0px;
+    
+}
+/* ---------------------utility-classes-------------------------- */
+
+}
+
 
 
 
